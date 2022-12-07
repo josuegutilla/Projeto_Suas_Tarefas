@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Source + Code+Pro:ital@1 & display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica;
+    background-image: linear-gradient(to right, #fcb0f3, #3d05dd);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h2{
+    font-family: 'Source Code Pro', monospace;
+}
+
+#tasks-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tasks-form */
+
+#tasks-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid #023047;
+    color: #023047;
+    padding: 15px;
+    font-size: 18px;
+    width: 100%;
+}
+
+#add-task-form input::placeholder{
+    color: #023047;
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#add-btn{
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #023047;
+    cursor: pointer;
+    padding-top: 3px;
+    transition: .3s;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+}
+
+#add-btn:hover{
+    background-color: #023047;
+    color: #fff;
+}
+
+ion-icon{
+    font-size: 25px;
+}
+
+/* tasks-container */
+
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border: 3px solid #023047;
+    background-color: #fff;
+    color: #023047;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#task-list li span{
+    font-size: 18px;
+}
+
+#task-list ion-icon{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .3s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    background-color: #09e018;
+    color: #fff;
+}
+
+.remove-btn{
+    right: 0px;
+}
+
+.remove-btn:hover{
+    background-color: #eb0927;
+    color: #fff;
+}
+
+.hide{
+    display: none;
+}
+
+#task-list li.done {
+    background-color: #023047;
+    color: #fff;
+    text-decoration: line-through;
+}
